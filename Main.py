@@ -28,15 +28,15 @@ message = input(f"{Fore.CYAN}[*]MESSAGE: ")
 
 text = f"Subject: {subject}\n\n{message}"
 
-#Target List
+#Reads Target List
 with open(List) as file:
     Target_List = [line.strip() for line in file.readlines()]
 
-#AppPass
+#Reads AppPassFile
 with open(AppPassFile) as file:
     AppPass = file.readline().strip()
 
-#Send Function
+#Defines Send Function
 def sendEmail():
     print(f"{Fore.CYAN}[+]Sending Emails. . .")
 
